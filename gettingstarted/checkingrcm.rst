@@ -127,6 +127,7 @@ Time to find out if any of this prep was worth it.
 3. Plug your Switch into your PC using your USB cable.
 
     * Your Switch **should not turn on.** If your Switch turns on, repeat Step 1 to enter RCM.
+    * Fusee-launcher only works with certain host controllers, blue USB 3 ports integrated into the motherboard tend to be most reliable. Failing to make sure of this can cause payloads to fail in a similar way to how they would on IPATCHED Switches.
     
 4. Run the command **'sudo python3 ./fusee-launcher.py ./fusee-test.bin'**
 
@@ -136,7 +137,7 @@ Time to find out if any of this prep was worth it.
     
 .. error::
 
-    If the application says the payload launch was successful, but nothing appears on your screen, unfortunately your Nintendo Switch is likely patched. **You should try a few more times to be certain, and consider trying another USB cable.**
+    If the application says the payload launch was successful, but nothing appears on your screen, unfortunately your Nintendo Switch is likely patched. **You should try a few more times to be certain, and consider trying another USB cable or port.**
     If your Switch is patched and running firmware 4.1.0, you can still access CFW.
     If your Switch is patched and running a higher firmware version, unfortunately your Switch cannot be hacked right now.
 
